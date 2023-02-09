@@ -5,13 +5,13 @@
     "arch": {
         "type": "Wav2VecDenseModel",
         "args": {
-            "input_dim": 512
+            "input_dim": 384
         }
     },
     "data_loader": {
         "type": "Wav2VecDataloader",
         "args":{
-            "data_dir": "./embeddings/voxceleb_gender_whisper-tiny",
+            "data_dir": "./dataset",
             "metadata_file": "train.csv",
             "val_metadata_file": "test.csv",
             "emb_dir": "",
@@ -47,8 +47,8 @@
         "save_period": 1,
         "verbosity": 2,
         "monitor": "max|accuracy",
-        "early_stop": 10,
-        "epochs": 500,
+        "early_stop": 3,
+        "epochs": 20,
         "tensorboard": true
     }
 }
