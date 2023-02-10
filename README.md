@@ -2,6 +2,8 @@
 
 Whisper embeddings are used to train a model for voice gender prediction.
 
+![gender-logo](imgs/gender.png)
+
 # The Dataset
 
 The dataset was originally created by [jim-schwoebel](https://github.com/jim-schwoebel/voice_gender_detection).  All files are from VoxCeleb2. The files were separated into male and female, and a sample was randomly chosen per speaker.
